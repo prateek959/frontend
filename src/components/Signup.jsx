@@ -29,7 +29,7 @@ function Signup() {
     };
     // console.log(userInfo);
     await axios
-      .post("https://backend-bi27.onrender.com/api/user/signup", userInfo)
+      .post("/api/user/signup", userInfo)
       .then((response) => {
         if (response.data) {
           toast.success("Signup successful");
