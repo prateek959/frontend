@@ -21,7 +21,7 @@ function Login() {
     };
 
     axios
-      .post("/api/user/login", userInfo)
+      .post("https://backend-bi27.onrender.com/api/user/login", userInfo)
       .then((response) => {
         if (response.data) {
           toast.success("Login successful");
